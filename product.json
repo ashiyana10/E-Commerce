@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "name": "Awesome Product",
+  "description": "This is a fantastic product that you absolutely need. It's amazing and will change your life (or at least make it a little bit better).",
+  "price": 49.99,
+  "image": "https://placehold.it/300x300",
+  "category": "Electronics",
+  "brand": "Brand X",
+  "inStock": true,
+  "averageRating": 4.5,
+  "reviews": [
+    {
+      "author": "John Doe",
+      "rating": 5,
+      "comment": "This product is simply the best!"
+    },
+    {
+      "author": "Jane Smith",
+      "rating": 4,
+      "comment": "Great product, but could be slightly cheaper."
+    }
+  ]
+}
