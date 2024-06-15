@@ -10,7 +10,7 @@ https://www.figma.com/design/9KTVjHlvBlwdjf9aRN08s6/Furniture-Single-product-pag
 
 - **Frontend (NextJS & ReactJS):**
   - Create a React component for the product page.
-  - Utilize NextJS functionalities like getStaticProps or getServerSideProps to fetch product data from the sample JSON file in the repository.
+  - Utilize ReactJS to fetch product data from the sample JSON file in the repository.
   - Display the product details on the page, including name, description, price, image, and other relevant information.
   - Implement basic user interaction features like adding the product to a cart (simulated functionality, no backend integration required).
   - Consider using a state management solution (Redux, Context API) to manage product data and cart state (optional).
@@ -25,8 +25,7 @@ https://www.figma.com/design/9KTVjHlvBlwdjf9aRN08s6/Furniture-Single-product-pag
 
 **Evaluation Criteria:**
 
-- Code quality, structure, and maintainability (use of NextJS conventions and React best practices).
-- Understanding of data fetching techniques in NextJS (e.g., getStaticProps, getServerSideProps).
+- Code quality, structure, and maintainability
 - Effective use of components and state management for data handling.
 - User interface design, responsiveness, and overall user experience.
 - Ability to complete the challenge within a reasonable timeframe (consider complexity and experience level).
