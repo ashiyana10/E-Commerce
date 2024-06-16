@@ -8,23 +8,37 @@ import store from "../../Redux-toolkit/Store";
 import { useSelector } from "react-redux";
 
 export function ProductModule() {
+  // store product details
   const productData = store.getState().persistReducers.productSlice.productData;
 
+  // set selected image for visibility and shadow
   const [selectedProductImage, setSelectedProductImage] = useState(
     productData.color["green"].images[0]
   );
+
+  // set selected color for respectively image
   const [selectedColor, setSelectedColor] = useState("green");
 
   useSelector((state) => state.persistReducers.productSlice);
 
+  /**
+   * set the main image based on color selection
+   */
   useEffect(() => {
     setSelectedProductImage(productData.color[selectedColor].images[0]);
   }, [selectedColor]);
 
+  /**
+   * set the add cart details when store value changed
+   */
   useEffect(() => {
     addCartVisible();
   }, [store]);
 
+  /**
+   * check item is added in cart or not
+   * @returns boolean value
+   */
   const addCartVisible = () => {
     return store
       .getState()
@@ -36,6 +50,7 @@ export function ProductModule() {
   return (
     <section className="mt-3">
       <div className="d-flex flex-column flex-sm-row">
+        {/* display product images section */}
         <div className="d-flex">
           <div className="d-flex flex-column">
             {productData.color[selectedColor].images.map((item) => (
@@ -58,9 +73,11 @@ export function ProductModule() {
             className="product-main-img ms-3"
           />
         </div>
+        {/* display product details section */}
         <div className="w-100 mx-5">
           <div>
             <p className="font-33px fw-bold mb-0">{productData.name}</p>
+            {/* rating and review section */}
             <div className="star-rating">
               {Array.from({ length: 5 }, (_, index) => index + 1).map(
                 (star) => {
@@ -89,6 +106,7 @@ export function ProductModule() {
               ${productData.price}
             </p>
 
+            {/* colors section */}
             <p className="fw-bolder mb-1 mt-3">Colors</p>
             <div className="d-flex">
               <div
@@ -111,6 +129,7 @@ export function ProductModule() {
               ></div>
             </div>
             <div className="d-flex mt-4">
+              {/* Add To Cart section is visible when user not added in cart */}
               {addCartVisible() < 0 && (
                 <button
                   type="button"
@@ -126,6 +145,8 @@ export function ProductModule() {
                   Add To Cart
                 </button>
               )}
+              {/* number of items in  Cart section is visible when user added in cart */}
+
               {addCartVisible() >= 0 && (
                 <div className="d-flex rounded-3 bg-light-purple p-1">
                   <button
@@ -186,6 +207,7 @@ export function ProductModule() {
           </div>
         </div>
       </div>
+      {/* other details section like description, etc.. */}
       <div className=" mt-4">
         <p className="font-30px mb-1">Description</p>
         <div className="row">

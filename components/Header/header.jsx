@@ -2,9 +2,11 @@ export function Header() {
   return (
     <section>
       <div className="d-flex justify-content-between py-4">
+        {/* website logo */}
         <div className="d-flex align-items-center">
           <p className="font-purple font-22px fw-bold mb-0">HOMELY</p>
         </div>
+        {/* Nav links */}
         <div className="d-flex">
           <nav className="navbar navbar-expand-lg navbar-light py-0">
             <div className="navbar-nav flex-row">
