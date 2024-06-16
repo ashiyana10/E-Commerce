@@ -22,8 +22,8 @@ export default function App({ Component, pageProps }) {
       <PersistGate persistor={persistor}>
         <Provider store={store}>
           {/* header component */}
-          <Header />
           <main>
+            <Header />
             <Component {...pageProps} />
           </main>
         </Provider>

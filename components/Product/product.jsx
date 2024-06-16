@@ -70,12 +70,12 @@ export function ProductModule() {
           <img
             src={selectedProductImage}
             alt="Product Image"
-            className="product-main-img ms-3"
+            className="product-main-img ms-3 rounded-3"
           />
         </div>
         {/* display product details section */}
-        <div className="w-100 mx-5">
-          <div>
+        <div className="w-100">
+          <div className="mx-5">
             <p className="font-33px fw-bold mb-0">{productData.name}</p>
             {/* rating and review section */}
             <div className="star-rating">

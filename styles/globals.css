@@ -1,23 +1,34 @@
 body {
-  margin: 0 60px;
-  width: 90%;
+  margin: 0;
+  width: 100%;
   overflow-x: hidden;
+  display: flex;
+}
+
+main {
+  margin: 0 60px;
 }
 
 .font-purple {
   color: #69306d;
 }
 
-.bg-light-purple {
+.bg-light-purple,
+.bg-light-purple:focus {
   background-color: #f2d7ee;
 }
 
-.bg-purple {
+.bg-purple,
+.bg-purple:focus {
   background-color: #69306d;
 }
 
 .bg-light-green {
-    background-color: #B7D0C1;
+  background-color: #b7d0c1;
+}
+
+button {
+  box-shadow: none !important;
 }
 
 .border-purple {
@@ -63,8 +74,8 @@ a {
 }
 
 .color-box {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 .star-rating {
@@ -77,11 +88,10 @@ a {
   margin-right: 0.2rem; /* Adjust spacing as needed */
   color: lightgray;
   display: inline-block;
-
 }
 
 .star.yellow {
-  color: #F4CD1E;
+  color: #f4cd1e;
 }
 
 .star.half {
@@ -95,6 +105,5 @@ a {
   left: 0;
   width: 50%;
   overflow: hidden;
-  color: #F4CD1E;
+  color: #f4cd1e;
 }
-
