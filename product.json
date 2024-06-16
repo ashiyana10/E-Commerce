@@ -12,12 +12,32 @@
     {
       "author": "John Doe",
       "rating": 5,
-      "comment": "This product is simply the best!"
+      "comment": "This product  is simply the best!"
     },
     {
       "author": "Jane Smith",
       "rating": 4,
       "comment": "Great product, but could be slightly cheaper."
     }
-  ]
+  ],
+  "color": {
+    "green": {
+      "images": [
+        "images/product/product-green-1.webp",
+        "images/product/product-green-2.webp",
+        "images/product/product-green-3.webp",
+        "images/product/product-green-4.webp",
+        "images/product/product-green-5.webp"
+      ]
+    },
+    "pink": {
+      "images": [
+        "images/product/product-pink-1.webp",
+        "images/product/product-pink-2.webp",
+        "images/product/product-pink-3.webp",
+        "images/product/product-pink-4.webp",
+        "images/product/product-pink-5.webp"
+      ]
+    }
+  }
 }
