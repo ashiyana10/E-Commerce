@@ -23,20 +23,20 @@
   "color": {
     "green": {
       "images": [
-        "images/product/product-green-1.webp",
-        "images/product/product-green-2.webp",
-        "images/product/product-green-3.webp",
-        "images/product/product-green-4.webp",
-        "images/product/product-green-5.webp"
+        "./Images/product/product-green-1.webp",
+        "./Images/product/product-green-2.webp",
+        "./Images/product/product-green-3.webp",
+        "./Images/product/product-green-4.webp",
+        "./Images/product/product-green-5.webp"
       ]
     },
     "pink": {
       "images": [
-        "images/product/product-pink-1.webp",
-        "images/product/product-pink-2.webp",
-        "images/product/product-pink-3.webp",
-        "images/product/product-pink-4.webp",
-        "images/product/product-pink-5.webp"
+        "./Images/product/product-pink-1.webp",
+        "./Images/product/product-pink-2.webp",
+        "./Images/product/product-pink-3.webp",
+        "./Images/product/product-pink-4.webp",
+        "./Images/product/product-pink-5.webp"
       ]
     }
   }

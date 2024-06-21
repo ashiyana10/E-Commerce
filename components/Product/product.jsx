@@ -195,7 +195,7 @@ export function ProductModule() {
                 type="button"
                 className="bg-white rounded-2 border-purple ms-3 width-20-per"
               >
-                <img src="images/like.svg" />
+                <img src="./Images/like.svg" />
               </button>
             </div>
             <button
